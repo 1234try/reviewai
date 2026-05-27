@@ -1,0 +1,42 @@
+{
+  "name": "reviewai",
+  "version": "0.1.0",
+  "description": "AI-powered code review CLI. Review your code changes with AI before pushing.",
+  "main": "dist/index.mjs",
+  "bin": {
+    "reviewai": "dist/index.mjs"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "code-review",
+    "cli",
+    "openai",
+    "git",
+    "pr-review",
+    "code-quality"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "openai": "^4.50.0",
+    "ora": "^8.0.1",
+    "simple-git": "^3.25.0",
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsup": "^8.1.0",
+    "tsx": "^4.15.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
