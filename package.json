@@ -1,6 +1,6 @@
 {
   "name": "reviewai",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "AI-powered code review CLI. Review your code changes with AI before pushing.",
   "type": "module",
   "main": "dist/index.js",
