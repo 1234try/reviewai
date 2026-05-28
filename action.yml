@@ -1,0 +1,31 @@
+name: "ReviewAI Code Review"
+description: "AI-powered code review for pull requests"
+author: "wanglingtry6"
+
+inputs:
+  api-key:
+    description: "API key for the AI provider (OpenAI or Anthropic)"
+    required: true
+  model:
+    description: "AI model to use (e.g. gpt-4o, claude-sonnet-4-20250514)"
+    required: false
+    default: "gpt-4o-mini"
+  provider:
+    description: "AI provider: openai or claude (auto-detected from model)"
+    required: false
+  format:
+    description: "Output format: terminal, json, markdown"
+    required: false
+    default: "markdown"
+  post-comment:
+    description: "Post review as a PR comment"
+    required: false
+    default: "true"
+
+runs:
+  using: "node20"
+  main: "action/index.js"
+
+branding:
+  icon: "check-circle"
+  color: "green"

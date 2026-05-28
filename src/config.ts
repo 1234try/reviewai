@@ -5,6 +5,7 @@ import YAML from "yaml";
 export interface Config {
   apiKey?: string;
   model?: string;
+  provider?: "openai" | "claude";
   baseURL?: string;
   format?: "terminal" | "json" | "markdown";
 }

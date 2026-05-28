@@ -2,3 +2,6 @@ node_modules/
 dist/
 *.tgz
 .env
+.reviewai.yml
+.reviewai.yaml
+.reviewai.json

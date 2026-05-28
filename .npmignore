@@ -1,0 +1,7 @@
+src/
+action/index.ts
+tsconfig.json
+tsup.config.ts
+.gitignore
+node_modules/
+*.tgz
